@@ -4,8 +4,8 @@ android {
     compileSdkVersion 26
     defaultConfig {
         minSdkVersion 16
-        versionCode 2
-        versionName String.format("%.0f.%02d.%3\$ty%3\$tm%3\$td%3\$tH%3\$tM", versionCode / 9 + 0.5, (versionCode + 8) % 9, new Date())
+        versionCode 3
+        versionName String.format("%.0f.%02d.%3\$ty%3\$tm%3\$td%3\$tH%3\$tM", versionCode / 9 + 0.49, (versionCode + 8) % 9, new Date())
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {

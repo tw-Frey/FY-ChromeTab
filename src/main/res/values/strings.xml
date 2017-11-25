@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="something_wrong">something wrong</string>
+    <string name="update_title">需要最新 Chrome 嗎？</string>
+</resources>
