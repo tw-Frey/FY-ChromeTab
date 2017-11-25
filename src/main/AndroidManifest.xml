@@ -1,2 +1,10 @@
 <manifest package="tw.idv.fy.chrometab"
-          xmlns:android="http://schemas.android.com/apk/res/android"/>
+          xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <application>
+        <activity
+            android:name=".ChromeTabHelper$Activity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+        </activity>
+    </application>
+</manifest>
