@@ -4,18 +4,18 @@ import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.annotation.AnimRes;
-import android.support.annotation.NonNull;
-import android.support.customtabs.CustomTabsClient;
-import android.support.customtabs.CustomTabsIntent;
-import android.support.v4.app.ActivityOptionsCompat;
-import android.support.v7.app.AlertDialog;
+import androidx.annotation.AnimRes;
+import androidx.annotation.NonNull;
+import androidx.browser.customtabs.CustomTabsClient;
+import androidx.browser.customtabs.CustomTabsIntent;
+import androidx.core.app.ActivityOptionsCompat;
+import androidx.appcompat.app.AlertDialog;
 import android.widget.Toast;
 
 import java.util.Arrays;
 import java.util.List;
 
-import static android.support.customtabs.CustomTabsIntent.EXTRA_EXIT_ANIMATION_BUNDLE;
+import static androidx.browser.customtabs.CustomTabsIntent.EXTRA_EXIT_ANIMATION_BUNDLE;
 
 @SuppressWarnings({"unused", "WeakerAccess", "SpellCheckingInspection"})
 public class ChromeTabHelper {
