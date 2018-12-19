@@ -111,6 +111,7 @@ public class ChromeTabHelper {
         context.startActivity(
                 new Intent(context, Activity.class)
                         .setData(uri)
+                        .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
                         .putExtra(Extra_Key_InAnimBundle , mStartAnimationBundle)
                         .putExtra(Extra_Key_OutAnimBundle, mExitAnimationBundle)
                         .putExtra(Extra_Key_OptionIntent , mOptionIntent)
@@ -129,7 +130,7 @@ public class ChromeTabHelper {
             }
             new AlertDialog.Builder(ctx, R.style.Theme_AppCompat_Dialog_Alert)
                     .setPositiveButton(android.R.string.ok, (d, w) ->
-                            startActivity(new Intent(Intent.ACTION_VIEW, Chrome_MarketUri))
+                            startActivity(new Intent(Intent.ACTION_VIEW, Chrome_MarketUri).addFlags(Intent.FLAG_ACTIVITY_NEW_TASK))
                     )
                     .setNegativeButton(android.R.string.no, (d, w) ->
                             LoadUri(ctx, getIntent())
